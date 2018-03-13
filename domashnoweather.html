@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Weather App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/domashnoweather.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="fullWidth">
+      <div class="container">
+        <div class="col-md-12 searchDiv">
+          <input class="inputSearch" placeholder="Search by city" type="text" id="city">
+          <button id="button" class="btn btn-default">Search</button>
+          <button class="floatRight btn btn-default" onclick="getLocation()">Get current location</button>
+          <!-- <ul id="results">
+            <li></li>
+          </ul> -->
+        </div>
+        <div class="col-md-6 left">
+          <h1 class="col-md-12" id="cityName"></h1>
+          <div class="col-md-12">
+            <img id="image" src="">
+            <span id="description" class="h3"></span>
+          </div>
+          <div class="col-md-12">
+            <span id="temperature" class="h1"></span>
+            <span class="h1">°C</span>
+          </div> 
+          <div class="col-md-12">
+            <div class="forecast details">
+                <p class="h3 forecastP">Details</p>
+              <div class="block">
+                <p class="inline h4 marginR">Humidity</p>
+                <p class="inline h3" id="humidity"></p>
+              </div>
+              <div class="block">
+                <p class="inline h4 marginR">Main Pressure</p>
+                <p class="inline h3" id="mainPressure"></p>
+              </div>
+              <div class="block">
+                <p class="inline h4 marginR">Wind Speed</p>
+                <p class="inline h3" id="windSpeed"></p>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="col-md-6 right">
+          <p id="mapP"></p>
+          <div id="mapholder"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="cold-md-12">
+          <div class="forecast">
+            <p class="h3 forecastP">Forecast (hourly)</p>
+            <div class="col-md-12l days">
+              <div>
+                <span id="dayTime0">Monday</span>
+                <div class="celsiusDivHolder">
+                  <span id="temp0" class="marginLeft">Monday</span>
+                  <span class="inline">°C</span>
+                </div>
+                <img id="img0" src="">
+                <p class="descriptionForecast" id="description0"></p>
+              </div>
+              <div>
+                <span id="dayTime1">Tuesday</span>
+                <div class="celsiusDivHolder">
+                <span id="temp1" class="marginLeft">Tuesday</span>
+                <span class="inline">°C</span>
+              </div>
+              <img id="img1" src="">
+              <p class="descriptionForecast" id="description1"></p>
+              </div>
+              <div>
+                <span id="dayTime2">Wednesday</span>
+                <div class="celsiusDivHolder">
+                  <span id="temp2" class="marginLeft">Wednesday</span>
+                  <span class="inline">°C</span>
+                </div>
+                <img id="img2" src="">
+                <p class="descriptionForecast" id="description2"></p>
+              </div>
+              <div>
+                <span id="dayTime3">Thursday</span>
+                <div class="celsiusDivHolder">
+                  <span id="temp3" class="marginLeft">Thursday</span>
+                  <span class="inline">°C</span>
+                </div>
+                <img id="img3" src="">
+                <p class="descriptionForecast" id="description3"></p>
+              </div>
+              <div>
+                <span id="dayTime4">Friday</span>
+                <div class="celsiusDivHolder">
+                  <span id="temp4" class="marginLeft">Friday</span>
+                  <span class="inline">°C</span>
+                </div>
+                <img id="img4" src="">
+                <p class="descriptionForecast" id="description4"></p>
+              </div>
+              <div>
+                <span id="dayTime5">Saturday</span>
+                <div class="celsiusDivHolder">
+                  <span id="temp5" class="marginLeft">Saturday</span>
+                  <span class="inline">°C</span>
+                </div>
+                <img id="img5" src="">
+                <p class="descriptionForecast" id="description5"></p>
+              </div>
+              <div>
+                <span id="dayTime6">Sunday</span>
+                <div class="celsiusDivHolder">
+                  <span id="temp6" class="marginLeft">Sunday</span>
+                  <span class="inline">°C</span>
+                </div>
+                <img id="img6" src="">
+                <p class="descriptionForecast" id="description6"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="js/domashnoweather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+.fullWidth {
+	width: 100%;
+	height: 100%;
+	background: url(../images/background.jpeg);
+	background-repeat: no-repeat;
+	height: 1000px;
+}
+
+	.container {
+		background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+	}
+
+		.left input {
+			color: black;
+		}
+
+			.searchDiv {
+				margin-top: 15px;
+			}
+
+			.inputSearch {
+				display: block;
+			    width: 70%;
+			    float: left;
+			    margin-right: 3px;
+			    height: 34px;
+			    padding: 6px 12px;
+			    font-size: 14px;
+			    line-height: 1.42857143;
+			    color: #555;
+			    background-color: #fff;
+			    background-image: none;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+			    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			}
+
+				.floatRight {
+					float: right;
+				}
+
+		#mapholder img {
+			float: right;
+			width: 100%;
+			height: auto;
+			margin-top: 20px;
+		}			
+
+			.forecast {
+				padding-top: 20px;
+			}	
+
+
+			.forecastP {
+				padding-bottom: 10px;
+				border-bottom: 2px solid white;
+			}
+
+			.days > div{
+				display: inline-block;
+				font-size: 16px;
+				width: 13%;
+			    margin-top: 10px;
+			}
+
+			.days span, .days img{
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.inline {
+				display: inline-block !important;
+			}
+
+			.block {
+				display: block;
+			}
+
+				.marginR {
+					margin-right: 15px;
+				}
+
+				.details {
+				    display: block;
+				}
+				
+				.celsiusDivHolder {
+					display: block;
+			        text-align: center;
+			        margin: 5px 0;
+				}
+
+					.celsiusDivHolder span {
+						display: inline;
+						text-align: center;
+					}
+
+					.marginLeft{
+						margin-left: 10px;
+					}
+
+					.descriptionForecast{
+						text-align: center;
+						font-size: 18px;
+					}
